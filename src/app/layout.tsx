@@ -1,5 +1,18 @@
 import type { Metadata } from 'next';
+import { Bitter, Golos_Text } from 'next/font/google';
 import '../styles/globals.css';
+
+const bitter = Bitter({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['600', '700', '800'],
+  variable: '--font-display',
+});
+
+const golosText = Golos_Text({
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://teplo-v-dom.vercel.app'),
@@ -26,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="ru">
+    <html lang="ru" className={`${bitter.variable} ${golosText.variable}`}>
       <body className="bg-stone-50 text-stone-900 antialiased">{children}</body>
     </html>
   );

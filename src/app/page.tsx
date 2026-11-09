@@ -121,17 +121,31 @@ export default function Home() {
           <section id="kotly" className="py-14 bg-white">
             <div className="max-w-6xl mx-auto px-4">
               <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-8">Какой котёл выбрать</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {BOILERS.map(b => (
-                  <div key={b.title} className="rounded-2xl border border-stone-200 p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <p className="font-bold text-lg text-stone-900">{b.title}</p>
-                      <p className="font-bold text-flame-700">{b.price}</p>
+              <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_1fr] gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {BOILERS.map(b => (
+                    <div key={b.title} className="rounded-2xl border border-stone-200 p-6">
+                      <div className="flex items-center justify-between mb-2">
+                        <p className="font-bold text-lg text-stone-900">{b.title}</p>
+                        <p className="font-bold text-flame-700">{b.price}</p>
+                      </div>
+                      <p className="text-xs font-medium text-flame-600 uppercase tracking-wide mb-3">{b.fuel}</p>
+                      <p className="text-sm text-stone-500 leading-relaxed">{b.text}</p>
                     </div>
-                    <p className="text-xs font-medium text-flame-600 uppercase tracking-wide mb-3">{b.fuel}</p>
-                    <p className="text-sm text-stone-500 leading-relaxed">{b.text}</p>
+                  ))}
+                </div>
+                <div className="relative hidden lg:block">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/works/pelletnyy-kotel-tis.jpg"
+                    alt="Установка пеллетного котла TIS с бункером автоподачи"
+                    className="rounded-2xl border border-stone-200 shadow-lg w-full h-full object-cover"
+                  />
+                  <div className="absolute -bottom-5 -left-5 bg-white text-stone-900 rounded-2xl px-5 py-3 shadow-xl">
+                    <p className="font-bold text-sm">Пеллетный котёл TIS</p>
+                    <p className="text-xs text-stone-500">Реальный монтаж в Гомеле</p>
                   </div>
-                ))}
+                </div>
               </div>
               <div className="mt-8">
                 <InlineCta text="Не уверены, какой котёл подойдёт? Позвоните — подскажем бесплатно." />
@@ -163,19 +177,19 @@ export default function Home() {
           </section>
 
           {/* How installation works */}
-          <section id="montazh" className="py-14 bg-white">
+          <section id="montazh" className="py-16 bg-stone-900">
             <div className="max-w-6xl mx-auto px-4">
-              <h2 className="text-2xl sm:text-3xl font-bold text-stone-900 mb-8">Как проходит установка</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8">Как проходит установка</h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                 {STEPS.map((s, i) => (
-                  <div key={s.title} className="relative rounded-2xl border border-stone-200 p-5 pt-8">
+                  <div key={s.title} className="relative rounded-2xl border border-white/10 bg-white/5 p-5 pt-8">
                     <span className="absolute -top-3 left-5 w-7 h-7 rounded-full bg-flame-600 text-white text-xs font-bold flex items-center justify-center">{i + 1}</span>
-                    <p className="font-semibold text-stone-900 mb-1.5">{s.title}</p>
-                    <p className="text-sm text-stone-500 leading-relaxed">{s.text}</p>
+                    <p className="font-semibold text-white mb-1.5">{s.title}</p>
+                    <p className="text-sm text-stone-400 leading-relaxed">{s.text}</p>
                   </div>
                 ))}
               </div>
-              <a href="/montazh-kotla-gomel" className="inline-flex items-center gap-1.5 mt-6 text-sm font-semibold text-flame-700 hover:underline">
+              <a href="/montazh-kotla-gomel" className="inline-flex items-center gap-1.5 mt-6 text-sm font-semibold text-flame-400 hover:text-flame-300 hover:underline">
                 Подробнее о монтаже и ценах на установку →
               </a>
             </div>

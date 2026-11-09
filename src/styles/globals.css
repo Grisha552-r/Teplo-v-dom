@@ -8,6 +8,13 @@ html {
 
 body {
   color: #1c1917;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3,
+.font-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  text-wrap: balance;
 }
 
 @keyframes pulse-ring {
