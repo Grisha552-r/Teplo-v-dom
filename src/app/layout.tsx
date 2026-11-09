@@ -2,17 +2,25 @@ import type { Metadata } from 'next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://teplo-v-dom.by'),
-  title: 'Тепло в дом — твердотопливные котлы в Гомеле, продажа и установка',
-  description: 'Твердотопливные котлы в Гомеле: продажа от 1 990 р., монтаж под ключ от 500 р. Выезд в день заявки, гарантия на работы. ☎ +375 33 330-99-80',
-  alternates: { canonical: 'https://teplo-v-dom.by' },
+  metadataBase: new URL('https://teplo-v-dom.vercel.app'),
+  title: 'Котлы Sakovich в Гомеле — продажа и установка | Тепло в дом',
+  description: 'Твердотопливные котлы Sakovich в Гомеле: от 1 990 р., монтаж под ключ от 500 р. Пеллетные котлы. Выезд в день заявки, гарантия на работы. ☎ +375 33 330-99-80',
+  alternates: { canonical: 'https://teplo-v-dom.vercel.app' },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-48.png', type: 'image/png', sizes: '48x48' },
+      { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
     type: 'website',
     locale: 'ru_BY',
     siteName: 'Тепло в дом',
-    title: 'Тепло в дом — твердотопливные котлы в Гомеле',
-    description: 'Продажа и установка твердотопливных котлов под ключ в Гомеле и области.',
+    title: 'Котлы Sakovich в Гомеле — Тепло в дом',
+    description: 'Продажа и установка твердотопливных котлов Sakovich под ключ в Гомеле и области.',
   },
 };
 

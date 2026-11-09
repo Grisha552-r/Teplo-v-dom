@@ -11,11 +11,21 @@ const schemaOrg = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'Тепло в дом',
-  description: 'Продажа и установка твердотопливных котлов в Гомеле под ключ.',
+  description: 'Продажа и установка твердотопливных котлов Саковичи в Гомеле под ключ.',
+  url: 'https://teplo-v-dom.vercel.app',
+  logo: 'https://teplo-v-dom.vercel.app/logo-512.png',
+  image: 'https://teplo-v-dom.vercel.app/images/works/obvyazka-kotla-max.jpg',
   telephone: '+375333309980',
   email: 'info.teploprim@mail.ru',
   address: { '@type': 'PostalAddress', streetAddress: 'ул. Добрушская, 60', addressLocality: 'Гомель', addressCountry: 'BY' },
   areaServed: { '@type': 'City', name: 'Гомель' },
+};
+
+const schemaWebsite = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Тепло в дом',
+  url: 'https://teplo-v-dom.vercel.app',
 };
 
 const schemaService = {
@@ -42,6 +52,7 @@ export default function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrg) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebsite) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaService) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
       <div id="top">
@@ -53,7 +64,7 @@ export default function Home() {
             <div>
               <p className="text-flame-600 text-sm font-semibold uppercase tracking-widest mb-4">Гомель и область</p>
               <h1 className="text-3xl sm:text-5xl font-bold leading-tight mb-5 text-stone-900">
-                Твердотопливные котлы в Гомеле — продажа и установка под ключ
+                Твердотопливные котлы Sakovich в Гомеле — продажа и установка под ключ
               </h1>
               <p className="text-stone-500 text-base sm:text-lg mb-8 max-w-xl">
                 Подберём котёл под площадь дома, привезём и установим за один визит. Выезд мастера в день заявки.

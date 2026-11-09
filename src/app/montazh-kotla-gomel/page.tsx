@@ -10,11 +10,11 @@ import { PHONE, PHONE_PRETTY } from '@/lib/content';
 export const metadata: Metadata = {
   title: 'Монтаж твердотопливного котла в Гомеле — от 500 р. | Тепло в дом',
   description: 'Установка твердотопливного котла в Гомеле под ключ: обвязка, дымоход, пуск. От 500 р., выезд в день заявки, гарантия 1 год. ☎ +375 33 330-99-80',
-  alternates: { canonical: 'https://teplo-v-dom.by/montazh-kotla-gomel' },
+  alternates: { canonical: 'https://teplo-v-dom.vercel.app/montazh-kotla-gomel' },
   openGraph: {
     title: 'Монтаж твердотопливного котла в Гомеле — от 500 р.',
     description: 'Установка под ключ: обвязка, дымоход, пуск. Выезд в день заявки.',
-    url: 'https://teplo-v-dom.by/montazh-kotla-gomel',
+    url: 'https://teplo-v-dom.vercel.app/montazh-kotla-gomel',
     type: 'website',
   },
 };
@@ -46,8 +46,8 @@ const schemaBreadcrumb = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
   itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Главная', item: 'https://teplo-v-dom.by' },
-    { '@type': 'ListItem', position: 2, name: 'Монтаж котла', item: 'https://teplo-v-dom.by/montazh-kotla-gomel' },
+    { '@type': 'ListItem', position: 1, name: 'Главная', item: 'https://teplo-v-dom.vercel.app' },
+    { '@type': 'ListItem', position: 2, name: 'Монтаж котла', item: 'https://teplo-v-dom.vercel.app/montazh-kotla-gomel' },
   ],
 };
 
@@ -56,7 +56,7 @@ const schemaService = {
   '@type': 'Service',
   name: 'Монтаж твердотопливного котла в Гомеле',
   description: 'Установка твердотопливного котла под ключ: обвязка, дымоход, пуско-наладка.',
-  provider: { '@type': 'LocalBusiness', name: 'Тепло в дом', telephone: '+375333309980' },
+  provider: { '@type': 'LocalBusiness', name: 'Тепло в дом', telephone: '+375333309980', logo: 'https://teplo-v-dom.vercel.app/logo-512.png' },
   areaServed: { '@type': 'City', name: 'Гомель' },
   offers: { '@type': 'Offer', price: '500', priceCurrency: 'BYN' },
 };

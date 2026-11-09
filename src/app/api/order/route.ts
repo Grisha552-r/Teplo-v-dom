@@ -25,7 +25,7 @@ export async function POST(req: Request) {
         ${name ? `<p><b>Имя:</b> ${name}</p>` : ''}
         <p><b>Телефон:</b> <a href="tel:${phone}">${phone}</a></p>
         ${comment ? `<p><b>Комментарий:</b> ${comment}</p>` : ''}
-        <p style="color:#888;font-size:13px;margin-top:16px">Заявка с сайта teplo-v-dom.by</p>
+        <p style="color:#888;font-size:13px;margin-top:16px">Заявка с сайта teplo-v-dom.vercel.app</p>
       </div>
     </div>
   `;
