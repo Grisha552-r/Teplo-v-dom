@@ -62,7 +62,7 @@ export default function Home() {
         <section className="bg-white">
           <div className="max-w-6xl mx-auto px-4 py-16 sm:py-24 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
             <div>
-              <p className="text-flame-600 text-sm font-semibold uppercase tracking-widest mb-4">Гомель и область</p>
+              <p className="text-flame-600 text-sm font-semibold uppercase tracking-widest mb-4">По всем городам Гомельской области</p>
               <h1 className="text-3xl sm:text-5xl font-bold leading-tight mb-5 text-stone-900">
                 Твердотопливные котлы под ключ
               </h1>

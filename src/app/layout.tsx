@@ -16,7 +16,7 @@ const golosText = Golos_Text({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://teplo-v-dom.vercel.app'),
-  title: 'Котлы Sakovich в Гомеле — продажа и установка | Тепло в дом',
+  title: 'Твердотопливные котлы в Гомеле — продажа и установка | Тепло в дом',
   description: 'Твердотопливные котлы Sakovich в Гомеле: от 1 990 р., монтаж под ключ от 500 р. Пеллетные котлы. Выезд в день заявки, гарантия на работы. ☎ +375 33 330-99-80',
   alternates: { canonical: 'https://teplo-v-dom.vercel.app' },
   robots: { index: true, follow: true },
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'ru_BY',
     siteName: 'Тепло в дом',
-    title: 'Котлы Sakovich в Гомеле — Тепло в дом',
+    title: 'Твердотопливные котлы в Гомеле — Тепло в дом',
     description: 'Продажа и установка твердотопливных котлов Sakovich под ключ в Гомеле и области.',
   },
 };
